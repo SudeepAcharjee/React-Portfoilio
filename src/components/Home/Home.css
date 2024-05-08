@@ -10,3 +10,15 @@
         transform: rotate(360deg);
     }
 }
+
+/* Add a transition for smooth animation */
+.home-section {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Define the animation for scrolling in */
+  .scrolled-in {
+    transform: translateY(0);
+  }
+  
+  

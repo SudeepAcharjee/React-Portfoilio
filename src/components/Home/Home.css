@@ -16,9 +16,33 @@
     transition: transform 0.5s ease-in-out;
   }
   
-  /* Define the animation for scrolling in */
-  .scrolled-in {
-    transform: translateY(0);
+  .zoom-in {
+    animation-name: zoomIn;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes zoomIn {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-in-out forwards;
   }
   
   

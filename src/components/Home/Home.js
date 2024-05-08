@@ -1,13 +1,17 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
+import homeLogo from "../../Assets/web1.png";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import "./Home.css"; // Import CSS file
+
+
 
 function Home() {
   return (
     <section>
+
       <Container fluid className="home-section" id="home">
         <Particle />
         <Container className="home-content">
@@ -31,12 +35,16 @@ function Home() {
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
-              <img
-                src={homeLogo}
-                alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
-              />
+            <img
+  src={homeLogo}
+  alt="home pic"
+  className="img-fluid rotate" // Add 'rotate' class here
+  style={{ 
+    maxHeight: "450px",
+    filter: "brightness(150%)" // Increase brightness by 50%
+  }}
+/>
+
             </Col>
           </Row>
         </Container>
